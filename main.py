@@ -5,7 +5,7 @@ app = FastAPI()
 
 
 @app.get("/api/restaurantes")
-def get_restaurantes(restaurante: str = Query(None)):
+def get_restaurante(restaurante: str = Query(None)):
     '''
     Endpoint para ver os cardápios de um restaurante especificado na query.
     Se nenhum restaurante for informado na query,
